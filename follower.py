@@ -49,6 +49,9 @@ class LineFollowerWindow(QMainWindow):
         widget.setLayout(layout)
         self.setCentralWidget(widget)
 
+        self.left_motor_graph.setYRange(-1, 1)
+        self.right_motor_graph.setYRange(-1, 1)
+
         # Serial connection object
         self.serialWrapper = serialWrapper
 
